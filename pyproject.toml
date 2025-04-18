@@ -1,0 +1,26 @@
+[project]
+name = "wagtail-turnstile"
+version = "0.1.0"
+authors = [
+  { name="Mark Steadman" },
+]
+description = "Cloudflare Turnstile integration for Wagtail forms"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Framework :: Django",
+    "Framework :: Wagtail",
+    "Programming Language :: Python :: 3",
+    "Topic :: Internet :: WWW/HTTP"
+]
+
+license = "MIT"
+license-files = ["LICENCE"]
+
+[project.urls]
+Homepage = "https://github.com/SoundsLocal/wagtail-turnstile"
+Issues = "https://github.com/SoundsLocal/wagtail-turnstile/issues"
+
+[tool.setuptools.packages.find]
+exclude = ["tests*"]
