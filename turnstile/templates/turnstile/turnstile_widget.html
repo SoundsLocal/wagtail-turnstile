@@ -1,0 +1,28 @@
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"></script>
+<input name="{{ widget.name }}" type="hidden">
+<div id="cf-turnstile-{{ widget.name }}"></div>
+
+<script>
+    turnstile.ready(
+        function () {
+            const container = document.getElementById('cf-turnstile-{{ widget.name }}')
+            const form = container.closest('form')
+
+            turnstile.render(
+                container,
+                {
+                    sitekey: '{{ site_key|escapejs }}',
+                    callback: function (token) {
+                        if (form) {
+                            form.querySelectorAll('input[name="{{ widget.name }}"]').forEach(
+                                function (input) {
+                                    input.value = token
+                                }
+                            )
+                        }
+                    }
+                }
+            )
+        }
+    )
+</script>
