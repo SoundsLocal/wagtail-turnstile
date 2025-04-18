@@ -1,0 +1,8 @@
+*.coverage
+*.pyc
+*.sqlite3
+.DS_Store
+/*.egg-info
+/.direnv
+/.envrc
+__pycache__
