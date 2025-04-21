@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="wagtail-turnstile",
-    version="0.1.0",
+    version="0.3.0",
     description="Cloudflare Turnstile integration for Wagtail forms",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
