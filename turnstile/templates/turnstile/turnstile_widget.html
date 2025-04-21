@@ -11,6 +11,7 @@
             turnstile.render(
                 container,
                 {
+                    appearance: '{{ appearance }}',
                     sitekey: '{{ site_key|escapejs }}',
                     callback: function (token) {
                         if (form) {
