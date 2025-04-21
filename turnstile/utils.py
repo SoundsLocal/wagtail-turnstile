@@ -20,6 +20,5 @@ def verify_turnstile_response(token):
 
     response = requests.post(CHALLENGE_URL, data=data)
     response = response.json()
-    print(response)
 
     return response.get("success", False)
