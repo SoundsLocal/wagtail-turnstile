@@ -17,6 +17,10 @@ class TurnstileWidget(widgets.Widget):
 
         super().__init__(*args, **kwargs)
 
+    @property
+    def is_hidden(self):
+        return self.appearance == "interaction-only"
+
     def get_context(self, name, value, attrs):
         if not hasattr(settings, "TURNSTILE_SITE_KEY"):
             raise ImproperlyConfigured(
