@@ -25,7 +25,7 @@ setup(
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     author="Mark Steadman",
-    url="https://github.com/SoundsLocal/wagtail-turnstile",
+    url="https://github.com/soundslocalcic/wagtail-turnstile",
     packages=find_packages(
         exclude=[
             "tests",
