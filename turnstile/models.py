@@ -13,6 +13,9 @@ class TurnstileAbstractFormField(AbstractFormField):
         )
     )
 
+    class Meta:
+        abstract = True
+
 
 class TurnstileFormBuilder(FormBuilder):
     def create_turnstile_field(self, field, options):
