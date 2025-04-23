@@ -1,2 +1,2 @@
 default_app_config = "turnstyle.apps.TurnstileConfig"
-__version__ = "0.3.2"
+__version__ = "0.4.0"
